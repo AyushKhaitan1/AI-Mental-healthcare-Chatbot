@@ -2,134 +2,145 @@
 
 ## 📸 Project Preview
 
-| Home Screen | Diagnostic Report |
+| Home Screen | | *User Interface & Sidebar* |
 
-| :---: | :---: |
+![Home Screen](images/home.png.png) 
 
-| ![Home Screen](images/home.png.png) | ![Report Screen](images/report.png.png) |
 
-| *User Interface & Sidebar* | *AI-Generated Medical Analysis* |
+
+| Diagnostic Report | |*AI-Generated Medical Analysis* |
+
+![Report Screen](images/report.png.png) 
 
 
 * Symptom-Based Disease Prediction using Random Forest: This project is an interactive healthcare solution that bridges the gap between Machine Learning and User-Centric Design.
 
 * Diagnostic Reports: It uses a trained Random Forest Classifier to analyze user symptoms and provide a preliminary diagnostic report, complete with disease descriptions and actionable precautions.
 
+
+
+
 🌟 Key Features
 
-Intelligent Symptom Mapping: Uses difflib and keyword processing to map user-friendly symptom names to machine-readable data.
+* Intelligent Symptom Mapping: Uses difflib and keyword processing to map user-friendly symptom names to machine-readable data.
 
 
 
-High-Accuracy Classifier: Employs a Random Forest Model with 300 estimators, trained on a comprehensive dataset of medical patterns.
+* High-Accuracy Classifier: Employs a Random Forest Model with 300 estimators, trained on a comprehensive dataset of medical patterns.
 
 
 
-Dynamic Data Loading: Loads medical descriptions and precautions directly from master CSV files to provide context-aware responses.
+* Dynamic Data Loading: Loads medical descriptions and precautions directly from master CSV files to provide context-aware responses.
 
 
 
-Interactive Chat UI: A clean Streamlit interface with a persistent sidebar for patient profiling and symptom selection.
+* Interactive Chat UI: A clean Streamlit interface with a persistent sidebar for patient profiling and symptom selection.
 
 
 
-Safety First: Includes automated disclaimers and "Model Confidence" scores to ensure users understand the tool is for demonstration purposes.
+* Safety First: Includes automated disclaimers and "Model Confidence" scores to ensure users understand the tool is for demonstration purposes.
+
 
 
 
 🛠️ Technical Stack
 
-Frontend: Streamlit (Python)
+* Frontend: Streamlit (Python)
 
 
 
-Machine Learning: Scikit-learn (Random Forest Classifier, Label Encoding)
+* Machine Learning: Scikit-learn (Random Forest Classifier, Label Encoding)
 
 
 
-Data Processing: Pandas, NumPy
+* Data Processing: Pandas, NumPy
 
 
 
-Natural Language: difflib for robust symptom matching
+* Natural Language: difflib for robust symptom matching
+
 
 
 
 📊 Dataset & Model
 
-The bot is powered by structured medical datasets:
+* The bot is powered by structured medical datasets:
 
 
 
-Training.csv: Contains patterns for various diseases and their associated symptoms.
+* Training.csv: Contains patterns for various diseases and their associated symptoms.
 
 
 
-symptom_Description.csv: Provides formal definitions for conditions like Malaria, Diabetes, and Hypertension.
+* symptom_Description.csv: Provides formal definitions for conditions like Malaria, Diabetes, and Hypertension.
 
 
 
-symptom_precaution.csv: Offers four levels of recommended actions for each predicted condition.
+* symptom_precaution.csv: Offers four levels of recommended actions for each predicted condition.
 
 
 
-Model Logic: The model uses 300 estimators (trees) in a Random Forest ensemble to ensure stable and reliable predictions even with complex symptom overlaps.
+* Model Logic: The model uses 300 estimators (trees) in a Random Forest ensemble to ensure stable and reliable predictions even with complex symptom overlaps.
+
 
 
 
 📂 Repository Structure
 
-streamlit_app.py: The main application file containing the UI logic and ML engine.
+1)  streamlit_app.py: The main application file containing the UI logic and ML engine.
 
 
 
-Data/: Contains Training.csv and Testing.csv used for model development.
+2)  Data/: Contains Training.csv and Testing.csv used for model development.
 
 
 
-MasterData/:
+3)  MasterData/:
 
 
 
-symptom_Description.csv: Detailed definitions of conditions.
+* symptom_Description.csv: Detailed definitions of conditions.
 
 
 
-symptom_precaution.csv: Specific steps to take for each diagnosis.
+* symptom_precaution.csv: Specific steps to take for each diagnosis.
 
 
 
-Symptom_severity.csv: Weights for different symptoms.
+* Symptom_severity.csv: Weights for different symptoms.
 
 
 
-.gitignore: Configured to exclude heavy virtual environments (venv/) and local caches.
+4)  .gitignore: Configured to exclude heavy virtual environments (venv/) and local caches.
+
 
 
 
 💻 Installation & Setup
 
-Clone the Repository:
+1) Clone the Repository:
 
-git clone https://github.com/AyushKhaitan1/AI-Mental-healthcare-Chatbot.git
+* git clone https://github.com/AyushKhaitan1/AI-Mental-healthcare-Chatbot.git
 
-cd AI-Mental-healthcare-Chatbot
+* cd AI-Mental-healthcare-Chatbot
 
-Set Up Virtual Environment:
+2) Set Up Virtual Environment:
 
-python -m venv venv
+* python -m venv venv
 
-Windows: venv\Scripts\activate
+* Windows: venv\Scripts\activate
 
-Mac/Linux: source venv/bin/activate
+* Mac/Linux: source venv/bin/activate
 
-Install Dependencies:
+3) Install Dependencies:
 
-pip install -r requirements.txt
+* pip install -r requirements.txt
 
-Run the Application:
+4) Run the Application:
 
-streamlit run streamlit_app.py
+* streamlit run streamlit_app.py
+
+
 
 
 ⚠️ Medical Disclaimer
