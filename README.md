@@ -4,7 +4,7 @@
 
 | Home Screen | Diagnostic Report |
 | :---: | :---: |
-| ![Home Screen](image/home.png.png) | ![Report Screen](image/report.png.png) |
+| ![Home Screen](images/home.png.png) | ![Report Screen](images/report.png.png) |
 | *User Interface & Sidebar* | *AI-Generated Medical Analysis* |
 
 Symptom-Based Disease Prediction using Random Forest
